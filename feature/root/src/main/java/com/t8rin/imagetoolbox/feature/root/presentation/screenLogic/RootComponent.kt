@@ -33,12 +33,12 @@ import com.arkivanov.decompose.router.stack.pop
 import com.arkivanov.decompose.router.stack.pushNew
 import com.arkivanov.decompose.value.MutableValue
 import com.arkivanov.decompose.value.Value
-import com.t8rin.imagetoolbox.core.domain.APP_CHANGELOG
 import com.t8rin.imagetoolbox.core.domain.coroutines.DispatchersHolder
 import com.t8rin.imagetoolbox.core.domain.history.AppHistoryRepository
 import com.t8rin.imagetoolbox.core.domain.model.ExtraDataType
 import com.t8rin.imagetoolbox.core.domain.model.ImageModel
 import com.t8rin.imagetoolbox.core.domain.remote.AnalyticsManager
+import com.t8rin.imagetoolbox.core.domain.remote.AppUpdateManager
 import com.t8rin.imagetoolbox.core.domain.resource.ResourceManager
 import com.t8rin.imagetoolbox.core.domain.saving.FileControllerEventEmitter
 import com.t8rin.imagetoolbox.core.domain.utils.smartJob
@@ -90,7 +90,8 @@ class RootComponent @AssistedInject internal constructor(
     dispatchersHolder: DispatchersHolder,
     settingsComponentFactory: SettingsComponent.Factory,
     resourceManager: ResourceManager,
-    fileControllerEventEmitter: FileControllerEventEmitter
+    fileControllerEventEmitter: FileControllerEventEmitter,
+    val appUpdateManager: AppUpdateManager
 ) : BaseComponent(dispatchersHolder, componentContext),
     ResourceManager by resourceManager,
     FileControllerEventEmitter by fileControllerEventEmitter {
@@ -149,9 +150,6 @@ class RootComponent @AssistedInject internal constructor(
     private val _showGithubReviewDialog = mutableStateOf(false)
     val showGithubReviewDialog by _showGithubReviewDialog
 
-    private val _showTelegramGroupDialog = mutableStateOf(false)
-    val showTelegramGroupDialog by _showTelegramGroupDialog
-
     private val _filterPreviewModel: MutableState<ImageModel> =
         mutableStateOf(R.drawable.filter_preview_source.toImageModel())
     val filterPreviewModel by _filterPreviewModel
@@ -162,13 +160,11 @@ class RootComponent @AssistedInject internal constructor(
 
     init {
         autoCacheCleanupUseCase.clearCacheIfNeeded(initialSettingsState)
+        appUpdateManager.checkForUpdate(silent = true)
 
         settingsManager
             .settingsState
             .onEach { state ->
-                _showTelegramGroupDialog.update {
-                    state.appOpenCount % 6 == 0 && state.appOpenCount != 0 && !state.isTelegramGroupOpened
-                }
                 _settingsState.value = state
             }
             .launchIn(componentScope)
@@ -266,10 +262,6 @@ class RootComponent @AssistedInject internal constructor(
         _showGithubReviewDialog.update { false }
     }
 
-    fun hideTelegramGroupDialog() {
-        _showTelegramGroupDialog.update { false }
-    }
-
     fun adjustPerformance() {
         componentScope.launch {
             settingsManager.adjustPerformance()
@@ -285,12 +277,6 @@ class RootComponent @AssistedInject internal constructor(
     fun notShowDonateDialogAgain() {
         componentScope.launch {
             settingsManager.setNotShowDonateDialogAgain()
-        }
-    }
-
-    fun registerTelegramGroupOpen() {
-        componentScope.launch {
-            settingsManager.registerTelegramGroupOpen()
         }
     }
 

@@ -358,6 +358,19 @@
     <string name="image_exif_warning">În prezent, formatul %1$s permite doar citirea metadatelor EXIF pe Android. Imaginea de ieșire nu va avea metadate deloc, atunci când este salvată.</string>
     <string name="effort">Efort</string>
     <string name="updates">Actualizări</string>
+    <string name="app_updates">App Updates</string>
+    <string name="app_updates_sub">Manage app updates</string>
+    <string name="checking_for_updates">Checking for updates…</string>
+    <string name="app_up_to_date">You are up to date</string>
+    <string name="app_update_available_tap_to_update">Update available. Tap to update</string>
+    <string name="app_update_available_sub">A new version is available. Update now to continue using the app.</string>
+    <string name="no_direct_apk_sub">A direct APK download is not available for this release. Please check again later.</string>
+    <string name="downloading_update_percent">Downloading update… %1$d%%</string>
+    <string name="update_downloaded_install">Update downloaded. Install it to finish updating.</string>
+    <string name="update_now">Update now</string>
+    <string name="install_update">Install update</string>
+    <string name="check_again">Check again</string>
+    <string name="retry">Retry</string>
     <string name="wait">Așteptați</string>
     <string name="effort_sub">O valoare de %1$s înseamnă că se comprimă rapid, ceea ce duce la o dimensiune relativ mare a fișierului. %2$s înseamnă că trebuie să se petreacă mai mult timp comprimând, rezultând un fișier mai mic.</string>
     <string name="saving_almost_complete">Salvarea este aproape finalizată. Anularea acum va necesita salvarea din nou.</string>
@@ -941,7 +954,6 @@
     <string name="webp_tools_sub">Convertiți imaginile în imagini animate WEBP sau extrageți cadre din animațiile WEBP date</string>
     <string name="settings_group_visibility_visible">Grupul de setări \"%1$s\" va fi extins în mod implicit</string>
     <string name="group">Grup</string>
-    <string name="imvory_in_telegram_sub">Alăturați-vă chat-ului nostru unde puteți discuta orice doriți și, de asemenea, uitați-vă la canalul CI unde postez versiuni beta și anunțuri</string>
     <string name="settings_group_visibility_hidden">Grupul de setări \"%1$s\" va fi colapsat în mod implicit</string>
     <string name="reset_properties">Resetați proprietățile</string>
     <string name="group_tools_by_type">Instrumente de grup în funcție de tip</string>
@@ -1426,7 +1438,6 @@
     <string name="manage_storage_extra_types">Fără acces complet la fișiere</string>
     <string name="enable_timestamps_to_format_them">Activați marcajele de timp pentru a le selecta formatul</string>
     <string name="recently_used">Folosit recent</string>
-    <string name="imvory_in_telegram">Caseta de instrumente pentru imagini în Telegram 🎉</string>
     <string name="fit_description">Potriviți o imagine la dimensiunile date și aplicați estompare sau culoare fundalului</string>
     <string name="system_bars_visibility">Vizibilitatea barelor de sistem</string>
     <string name="show_system_bars_by_swipe">Afișați barele de sistem prin glisare</string>

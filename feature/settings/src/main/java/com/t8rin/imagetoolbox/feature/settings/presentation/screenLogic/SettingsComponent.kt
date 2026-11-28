@@ -38,6 +38,7 @@ import com.t8rin.imagetoolbox.core.domain.image.model.ResizeType
 import com.t8rin.imagetoolbox.core.domain.model.ColorModel
 import com.t8rin.imagetoolbox.core.domain.model.HashingType
 import com.t8rin.imagetoolbox.core.domain.model.SystemBarsVisibility
+import com.t8rin.imagetoolbox.core.domain.remote.AppUpdateManager
 import com.t8rin.imagetoolbox.core.domain.resource.ResourceManager
 import com.t8rin.imagetoolbox.core.domain.saving.FileController
 import com.t8rin.imagetoolbox.core.domain.saving.FilenameCreator
@@ -90,6 +91,7 @@ class SettingsComponent @AssistedInject internal constructor(
     private val shareProvider: ShareProvider,
     filenameCreator: FilenameCreator,
     dispatchersHolder: DispatchersHolder,
+    val appUpdateManager: AppUpdateManager,
 ) : BaseComponent(dispatchersHolder, componentContext), FilenameCreator by filenameCreator {
 
     private val _settingsState = mutableStateOf(SettingsState.Default)

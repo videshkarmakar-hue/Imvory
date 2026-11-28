@@ -17,7 +17,7 @@
 
 package com.t8rin.imagetoolbox.core.domain
 
-const val AUTHOR_NICK = "videshkarmakar"
+const val AUTHOR_NICK = "videshkarmakar-hue"
 
 const val AUTHOR_EMAIL = "videshkarmakar@imvory.app"
 
@@ -28,7 +28,7 @@ const val WEBSITE_LINK = "https://imvory.app"
 
 
 const val AUTHOR_GITHUB = "https://github.com/$AUTHOR_NICK"
-const val APP_GITHUB_LINK = "$AUTHOR_GITHUB/imvory"
+const val APP_GITHUB_LINK = "$AUTHOR_GITHUB/Imvory"
 const val ISSUE_TRACKER = "$APP_GITHUB_LINK/issues"
 const val APP_RELEASES = "$APP_GITHUB_LINK/releases"
 

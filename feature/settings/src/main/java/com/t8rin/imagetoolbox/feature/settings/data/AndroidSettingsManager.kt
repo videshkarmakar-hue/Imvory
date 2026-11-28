@@ -151,7 +151,6 @@ import com.t8rin.imagetoolbox.feature.settings.data.keys.INVERT_THEME
 import com.t8rin.imagetoolbox.feature.settings.data.keys.IS_LAUNCHER_MODE
 import com.t8rin.imagetoolbox.feature.settings.data.keys.IS_LINK_PREVIEW_ENABLED
 import com.t8rin.imagetoolbox.feature.settings.data.keys.IS_SYSTEM_BARS_VISIBLE_BY_SWIPE
-import com.t8rin.imagetoolbox.feature.settings.data.keys.IS_TELEGRAM_GROUP_OPENED
 import com.t8rin.imagetoolbox.feature.settings.data.keys.KEEP_DATE_TIME
 import com.t8rin.imagetoolbox.feature.settings.data.keys.LAST_CACHE_AUTO_CLEAR_TIMESTAMP_MILLIS
 import com.t8rin.imagetoolbox.feature.settings.data.keys.LOCK_DRAW_ORIENTATION
@@ -934,10 +933,6 @@ internal class AndroidSettingsManager @Inject constructor(
         key = USE_FORMATTED_TIMESTAMP,
         defaultValue = default.useFormattedFilenameTimestamp
     )
-
-    override suspend fun registerTelegramGroupOpen() = edit {
-        it[IS_TELEGRAM_GROUP_OPENED] = true
-    }
 
     override suspend fun setDefaultResizeType(resizeType: ResizeType) = edit { preferences ->
         preferences[DEFAULT_RESIZE_TYPE] = ResizeType.entries.indexOfFirst {

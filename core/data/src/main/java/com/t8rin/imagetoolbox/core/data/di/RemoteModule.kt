@@ -17,8 +17,12 @@
 
 package com.t8rin.imagetoolbox.core.data.di
 
+import com.t8rin.imagetoolbox.core.data.remote.AndroidAppUpdateChecker
+import com.t8rin.imagetoolbox.core.data.remote.AndroidAppUpdateManager
 import com.t8rin.imagetoolbox.core.data.remote.AndroidDownloadManager
 import com.t8rin.imagetoolbox.core.data.remote.AndroidRemoteResourcesStore
+import com.t8rin.imagetoolbox.core.domain.remote.AppUpdateChecker
+import com.t8rin.imagetoolbox.core.domain.remote.AppUpdateManager
 import com.t8rin.imagetoolbox.core.domain.remote.DownloadManager
 import com.t8rin.imagetoolbox.core.domain.remote.RemoteResourcesStore
 import com.t8rin.imagetoolbox.core.utils.makeLog
@@ -50,6 +54,18 @@ internal interface RemoteModule {
     fun downloadManager(
         impl: AndroidDownloadManager
     ): DownloadManager
+
+    @Binds
+    @Singleton
+    fun appUpdateChecker(
+        impl: AndroidAppUpdateChecker
+    ): AppUpdateChecker
+
+    @Binds
+    @Singleton
+    fun appUpdateManager(
+        impl: AndroidAppUpdateManager
+    ): AppUpdateManager
 
     companion object {
         @Provides

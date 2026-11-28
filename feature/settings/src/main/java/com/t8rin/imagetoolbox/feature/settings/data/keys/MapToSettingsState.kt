@@ -234,7 +234,6 @@ internal fun Preferences.toSettingsState(
     customAsciiGradients = this[ASCII_CUSTOM_GRADIENTS]
         ?: default.customAsciiGradients,
     isScreenSelectionLauncherMode = this[IS_LAUNCHER_MODE] ?: default.isScreenSelectionLauncherMode,
-    isTelegramGroupOpened = this[IS_TELEGRAM_GROUP_OPENED] ?: default.isTelegramGroupOpened,
     initialOcrMode = this[INITIAL_OCR_MODE] ?: default.initialOcrMode,
     initialOcrEngine = this[INITIAL_OCR_ENGINE] ?: default.initialOcrEngine,
     initialPaddleOcrModel = this[INITIAL_PADDLE_OCR_MODEL] ?: default.initialPaddleOcrModel,

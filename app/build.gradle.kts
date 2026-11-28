@@ -52,7 +52,6 @@ android {
     productFlavors {
         create("foss") {
             dimension = "app"
-            versionNameSuffix = "-foss"
             extra.set("gmsEnabled", false)
         }
         create("market") {
@@ -111,7 +110,6 @@ android {
 
     packaging {
         jniLibs {
-            keepDebugSymbols.add("**/*.so")
             pickFirsts.add("lib/*/libcoder.so")
             pickFirsts.add("**/libdatstore_shared_counter.so")
             useLegacyPackaging = true
@@ -123,6 +121,8 @@ android {
             excludes += "org/"
             excludes += ".properties"
             excludes += ".bin"
+            excludes += "DebugProbesKt.bin"
+            excludes += "kotlin-tooling-metadata.json"
             excludes += "META-INF/versions/9/OSGI-INF/MANIFEST.MF"
         }
     }

@@ -36,6 +36,19 @@
     <string name="custom_pages">Pasirinktiniai puslapiai</string>
     <string name="check_source_code_sub">Gaukite naujausius naujinimus, aptarkite problemas ir daugiau.</string>
     <string name="updates">Naujinimai</string>
+    <string name="app_updates">App Updates</string>
+    <string name="app_updates_sub">Manage app updates</string>
+    <string name="checking_for_updates">Checking for updates…</string>
+    <string name="app_up_to_date">You are up to date</string>
+    <string name="app_update_available_tap_to_update">Update available. Tap to update</string>
+    <string name="app_update_available_sub">A new version is available. Update now to continue using the app.</string>
+    <string name="no_direct_apk_sub">A direct APK download is not available for this release. Please check again later.</string>
+    <string name="downloading_update_percent">Downloading update… %1$d%%</string>
+    <string name="update_downloaded_install">Update downloaded. Install it to finish updating.</string>
+    <string name="update_now">Update now</string>
+    <string name="install_update">Install update</string>
+    <string name="check_again">Check again</string>
+    <string name="retry">Retry</string>
     <string name="search_here">Ieškokite čia</string>
     <string name="lut_library_update_sub">Atnaujinti LUT kolekciją (į eilę bus įtraukti tik nauji), kurią galėsite taikyti atsisiuntę.</string>
     <string name="tg_chat_sub">Aptarkite programėlę ir gaukite kitų naudotojų atsiliepimų. Čia taip pat galite gauti beta versijos naujinimų ir įžvalgų.</string>
@@ -49,7 +62,6 @@
     <string name="donation">Aukojimas</string>
     <string name="search_option">Paieška</string>
     <string name="search_option_sub">Suteikia galimybę ieškoti visų pagrindiniame ekrane esančių įrankių.</string>
-    <string name="imvory_in_telegram_sub">Junkitės prie mūsų pokalbio, kuriame galite aptarti viską, ką norite, ir taip pat pažvelkite į CI kanalą, kuriame skelbiu beta versijas ir skelbimus.</string>
     <string name="reset_settings_sub">Tai sugrąžins jūsų nustatymus į numatytąsias reikšmes. Atkreipkite dėmesį, kad to negalima anuliuoti be pirmiau minėto atsarginės kopijos failo.</string>
     <string name="send_logs">Siųsti žurnalus</string>
     <string name="send_logs_sub">Spustelėkite norint bendrinti programėlės žurnalų failą. Tai gali padėti man pastebėti ir išspręsti problemas.</string>
@@ -61,7 +73,6 @@
     <string name="restore_sub">Atkurkite programėlės nustatymus iš anksčiau sugeneruoto failo.</string>
     <string name="ci_channel">CI kanalas</string>
     <string name="group">Grupė</string>
-    <string name="imvory_in_telegram">„Imvory“ programėlėje „Telegram“ 🎉</string>
     <string name="ci_channel_sub">Gaukite pranešimų apie naujas programėlės versijas ir skaitykite skelbimus.</string>
     <string name="crash_subtitle">Galite susisiekti su manimi naudojant žemiau nurodytas parinktis ir aš bandysiu surasti sprendimą.\n\n(Nepamirškite pridėti žurnalus).</string>
     <string name="explicit">Aiškus</string>

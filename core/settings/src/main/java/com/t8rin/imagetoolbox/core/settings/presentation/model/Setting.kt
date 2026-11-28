@@ -847,4 +847,10 @@ sealed class Setting(
         subtitle = R.string.raw_apply_orientation_sub
     )
 
+    @Serializable
+    data object AppUpdates : Setting(
+        title = R.string.app_updates,
+        subtitle = R.string.app_updates_sub
+    )
+
 }

@@ -94,6 +94,10 @@ internal fun SettingItem(
                 )
             }
 
+            Setting.AppUpdates -> {
+                AppUpdatesSettingItem(appUpdateManager = component.appUpdateManager)
+            }
+
             Setting.AutoCacheClear -> {
                 AutoCacheClearSettingItem(onClick = component::toggleClearCacheOnLaunch)
             }

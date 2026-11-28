@@ -213,8 +213,6 @@ interface SettingsInteractor : SimpleSettingsInteractor {
 
     suspend fun toggleUseFormattedFilenameTimestamp()
 
-    suspend fun registerTelegramGroupOpen()
-
     suspend fun setDefaultResizeType(resizeType: ResizeType)
 
     suspend fun setSystemBarsVisibility(systemBarsVisibility: SystemBarsVisibility)

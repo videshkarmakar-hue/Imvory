@@ -381,6 +381,19 @@
     <string name="wait">صبر کنید</string>
     <string name="saving_almost_complete">ذخیره تقریباً کامل شده است. لغو اکنون نیازمند ذخیره دوباره است.</string>
     <string name="updates">به‌روزرسانی‌ها</string>
+    <string name="app_updates">App Updates</string>
+    <string name="app_updates_sub">Manage app updates</string>
+    <string name="checking_for_updates">Checking for updates…</string>
+    <string name="app_up_to_date">You are up to date</string>
+    <string name="app_update_available_tap_to_update">Update available. Tap to update</string>
+    <string name="app_update_available_sub">A new version is available. Update now to continue using the app.</string>
+    <string name="no_direct_apk_sub">A direct APK download is not available for this release. Please check again later.</string>
+    <string name="downloading_update_percent">Downloading update… %1$d%%</string>
+    <string name="update_downloaded_install">Update downloaded. Install it to finish updating.</string>
+    <string name="update_now">Update now</string>
+    <string name="install_update">Install update</string>
+    <string name="check_again">Check again</string>
+    <string name="retry">Retry</string>
     <string name="draw_arrows">نقاشی پیکان‌ها</string>
     <string name="draw_arrows_sub">اگر فعال باشد مسیر ترسیم به صورت فلش اشاره گر نشان داده می شود</string>
     <string name="brush_softness">نرمی قلم</string>
@@ -956,7 +969,6 @@
     <string name="tag_shutter_speed_value">مقدار سرعت شاتر</string>
     <string name="tag_flash">فلش</string>
     <string name="tag_flash_energy">انرژی فلش</string>
-    <string name="imvory_in_telegram">Imvory در تلگرام 🎉</string>
     <string name="noise_generation">تولید نویز</string>
     <string name="noise_generation_sub">نویز های مختلفی مانند پرلین یا انواع دیگر تولید کنید</string>
     <string name="noise_type">نوع نویز</string>
@@ -1396,7 +1408,6 @@
     <string name="recently_used">اخیرا استفاده شده است</string>
     <string name="ci_channel">کانال CI</string>
     <string name="group">گروه</string>
-    <string name="imvory_in_telegram_sub">به چت ما بپیوندید، جایی که می توانید در مورد هر چیزی که می خواهید بحث کنید و همچنین به کانال CI که در آن نسخه های بتا و اطلاعیه ها را پست می کنم نگاه کنید.</string>
     <string name="ci_channel_sub">در مورد نسخه های جدید برنامه مطلع شوید و اطلاعیه ها را بخوانید</string>
     <string name="fit_description">یک تصویر را در ابعاد داده شده قرار دهید و تاری یا رنگ را در پس زمینه اعمال کنید</string>
     <string name="tools_arrangement">چیدمان ابزار</string>

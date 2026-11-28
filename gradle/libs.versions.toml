@@ -22,7 +22,7 @@ jixelCoder = "3.0.0-alpha04"
 jxlCoder = "2.6.2"
 jpegliCoder = "1.0.2"
 
-tesseract = "4.9.0"
+tesseract = "4.8.0"
 material3 = "1.5.0-alpha27"
 composeVersion = "1.13.0-alpha02"
 dataStore = "1.3.0-alpha10"
@@ -131,25 +131,25 @@ mlkit-document-scanner = { module = "com.google.android.gms:play-services-mlkit-
 quickie-bundled = { module = "com.github.T8RIN.QuickieExtended:quickie-bundled", version.ref = "quickie" }
 quickie-foss = { module = "com.github.T8RIN.QuickieExtended:quickie-foss", version.ref = "quickie" }
 
-toolbox-gpuimage = { module = "com.github.T8RIN.ImvoryLibs:gpuimage", version.ref = "imageToolboxLibs" }
-toolbox-androidwm = { module = "com.github.T8RIN.ImvoryLibs:androidwm", version.ref = "imageToolboxLibs" }
-toolbox-gifConverter = { module = "com.github.T8RIN.ImvoryLibs:gif-converter", version.ref = "imageToolboxLibs" }
-toolbox-apng = { module = "com.github.T8RIN.ImvoryLibs:apng", version.ref = "imageToolboxLibs" }
-toolbox-jp2decoder = { module = "com.github.T8RIN.ImvoryLibs:jp2decoder", version.ref = "imageToolboxLibs" }
-toolbox-qoiCoder = { module = "com.github.T8RIN.ImvoryLibs:qoi-coder", version.ref = "imageToolboxLibs" }
-toolbox-awebp = { module = "com.github.T8RIN.ImvoryLibs:awebp", version.ref = "imageToolboxLibs" }
-toolbox-psd = { module = "com.github.T8RIN.ImvoryLibs:psd", version.ref = "imageToolboxLibs" }
-toolbox-djvuCoder = { module = "com.github.T8RIN.ImvoryLibs:djvu-coder", version.ref = "imageToolboxLibs" }
-toolbox-fastNoise = { module = "com.github.T8RIN.ImvoryLibs:fast-noise", version.ref = "imageToolboxLibs" }
-toolbox-histogram = { module = "com.github.T8RIN.ImvoryLibs:histogram", version.ref = "imageToolboxLibs" }
-toolbox-advancedCrop = { module = "com.github.T8RIN.ImvoryLibs:advanced-crop", version.ref = "imageToolboxLibs" }
-toolbox-exif = { module = "com.github.T8RIN.ImvoryLibs:exif", version.ref = "imageToolboxLibs" }
-toolbox-jhlabs = { module = "com.github.T8RIN.ImvoryLibs:jhlabs", version.ref = "imageToolboxLibs" }
-toolbox-rawCoder = { module = "com.github.T8RIN.ImvoryLibs:raw-coder", version.ref = "imageToolboxLibs" }
-toolbox-tiffCoder = { module = "com.github.T8RIN.ImvoryLibs:tiff-coder", version.ref = "imageToolboxLibs" }
-toolbox-gmic = { module = "com.github.T8RIN.ImvoryLibs:gmic", version.ref = "imageToolboxLibs" }
-toolbox-archiveBrotli = { module = "com.github.T8RIN.ImvoryLibs:archive-brotli", version.ref = "imageToolboxLibs" }
-toolbox-fractalEngine = { module = "com.github.T8RIN.ImvoryLibs:fractal-engine", version.ref = "imageToolboxLibs" }
+toolbox-gpuimage = { module = "com.github.T8RIN.ImageToolboxLibs:gpuimage", version.ref = "imageToolboxLibs" }
+toolbox-androidwm = { module = "com.github.T8RIN.ImageToolboxLibs:androidwm", version.ref = "imageToolboxLibs" }
+toolbox-gifConverter = { module = "com.github.T8RIN.ImageToolboxLibs:gif-converter", version.ref = "imageToolboxLibs" }
+toolbox-apng = { module = "com.github.T8RIN.ImageToolboxLibs:apng", version.ref = "imageToolboxLibs" }
+toolbox-jp2decoder = { module = "com.github.T8RIN.ImageToolboxLibs:jp2decoder", version.ref = "imageToolboxLibs" }
+toolbox-qoiCoder = { module = "com.github.T8RIN.ImageToolboxLibs:qoi-coder", version.ref = "imageToolboxLibs" }
+toolbox-awebp = { module = "com.github.T8RIN.ImageToolboxLibs:awebp", version.ref = "imageToolboxLibs" }
+toolbox-psd = { module = "com.github.T8RIN.ImageToolboxLibs:psd", version.ref = "imageToolboxLibs" }
+toolbox-djvuCoder = { module = "com.github.T8RIN.ImageToolboxLibs:djvu-coder", version.ref = "imageToolboxLibs" }
+toolbox-fastNoise = { module = "com.github.T8RIN.ImageToolboxLibs:fast-noise", version.ref = "imageToolboxLibs" }
+toolbox-histogram = { module = "com.github.T8RIN.ImageToolboxLibs:histogram", version.ref = "imageToolboxLibs" }
+toolbox-advancedCrop = { module = "com.github.T8RIN.ImageToolboxLibs:advanced-crop", version.ref = "imageToolboxLibs" }
+toolbox-exif = { module = "com.github.T8RIN.ImageToolboxLibs:exif", version.ref = "imageToolboxLibs" }
+toolbox-jhlabs = { module = "com.github.T8RIN.ImageToolboxLibs:jhlabs", version.ref = "imageToolboxLibs" }
+toolbox-rawCoder = { module = "com.github.T8RIN.ImageToolboxLibs:raw-coder", version.ref = "imageToolboxLibs" }
+toolbox-tiffCoder = { module = "com.github.T8RIN.ImageToolboxLibs:tiff-coder", version.ref = "imageToolboxLibs" }
+toolbox-gmic = { module = "com.github.T8RIN.ImageToolboxLibs:gmic", version.ref = "imageToolboxLibs" }
+toolbox-archiveBrotli = { module = "com.github.T8RIN.ImageToolboxLibs:archive-brotli", version.ref = "imageToolboxLibs" }
+toolbox-fractalEngine = { module = "com.github.T8RIN.ImageToolboxLibs:fractal-engine", version.ref = "imageToolboxLibs" }
 
 aire = { module = "com.github.awxkee:aire", version.ref = "aire" }
 jpegli-coder = { module = "com.github.awxkee:jpegli-coder", version.ref = "jpegliCoder" }
@@ -230,8 +230,8 @@ desugaring = { module = "com.android.tools:desugar_jdk_libs", version.ref = "des
 kotlin-metadata-jvm = { module = "org.jetbrains.kotlin:kotlin-metadata-jvm", version.ref = "kotlin" }
 
 [plugins]
-imvory-library = { id = "image.toolbox.library", version = "unspecified" }
-imvory-hilt = { id = "image.toolbox.hilt", version = "unspecified" }
-imvory-feature = { id = "image.toolbox.feature", version = "unspecified" }
-imvory-compose = { id = "image.toolbox.compose", version = "unspecified" }
-imvory-application = { id = "image.toolbox.application", version = "unspecified" }
+image-toolbox-library = { id = "image.toolbox.library", version = "unspecified" }
+image-toolbox-hilt = { id = "image.toolbox.hilt", version = "unspecified" }
+image-toolbox-feature = { id = "image.toolbox.feature", version = "unspecified" }
+image-toolbox-compose = { id = "image.toolbox.compose", version = "unspecified" }
+image-toolbox-application = { id = "image.toolbox.application", version = "unspecified" }

@@ -119,7 +119,6 @@ internal val DEFAULT_DRAW_COLOR = intPreferencesKey("DEFAULT_DRAW_COLOR")
 internal val DEFAULT_DRAW_PATH_MODE = intPreferencesKey("DEFAULT_DRAW_PATH_MODE")
 internal val ADD_TIMESTAMP_TO_FILENAME = booleanPreferencesKey("ADD_TIMESTAMP_TO_FILENAME")
 internal val USE_FORMATTED_TIMESTAMP = booleanPreferencesKey("USE_FORMATTED_TIMESTAMP")
-internal val IS_TELEGRAM_GROUP_OPENED = booleanPreferencesKey("IS_TELEGRAM_GROUP_OPENED")
 internal val DEFAULT_RESIZE_TYPE = intPreferencesKey("DEFAULT_RESIZE_TYPE")
 internal val SYSTEM_BARS_VISIBILITY = intPreferencesKey("SYSTEM_BARS_VISIBILITY")
 internal val IS_SYSTEM_BARS_VISIBLE_BY_SWIPE =

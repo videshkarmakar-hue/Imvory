@@ -304,6 +304,19 @@
     <string name="file_proceed">Archivo procesado</string>
     <string name="reset_settings_sub">Esto restablecerá la configuración a los valores predeterminados. Ten en cuenta que esto no se puede deshacer sin un archivo de respaldo mencionado anteriormente.</string>
     <string name="updates">Actualizaciones</string>
+    <string name="app_updates">App Updates</string>
+    <string name="app_updates_sub">Manage app updates</string>
+    <string name="checking_for_updates">Checking for updates…</string>
+    <string name="app_up_to_date">You are up to date</string>
+    <string name="app_update_available_tap_to_update">Update available. Tap to update</string>
+    <string name="app_update_available_sub">A new version is available. Update now to continue using the app.</string>
+    <string name="no_direct_apk_sub">A direct APK download is not available for this release. Please check again later.</string>
+    <string name="downloading_update_percent">Downloading update… %1$d%%</string>
+    <string name="update_downloaded_install">Update downloaded. Install it to finish updating.</string>
+    <string name="update_now">Update now</string>
+    <string name="install_update">Install update</string>
+    <string name="check_again">Check again</string>
+    <string name="retry">Retry</string>
     <string name="something_went_wrong_emphasis">Ups… Algo salió mal, escríbeme utilizando las opciones debajo e intentaré encontrar una solución</string>
     <string name="tg_chat">Chat de Telegram</string>
     <string name="crop_mask">Recortar máscara</string>
@@ -877,7 +890,6 @@
     <string name="recently_used">Usados recientemente</string>
     <string name="ci_channel">Canal CI</string>
     <string name="group">Grupo</string>
-    <string name="imvory_in_telegram">Imvory en Telegram 🎉</string>
     <string name="font_size">Tamaño de fuente</string>
     <string name="watermark_size">Tamaño de marca de agua</string>
     <string name="custom_options">Opciones personalizadas</string>
@@ -940,7 +952,6 @@
     <string name="lut512x512">512x512 2D LUT</string>
     <string name="lut">LUT</string>
     <string name="kodak">Kodak</string>
-    <string name="imvory_in_telegram_sub">Únete a nuestra conversación donde charlamos de todo lo que quieras y también échale un vistazo al canal CI donde publico versiones betas y comunicados</string>
     <string name="ci_channel_sub">Recibe notificaciones sobre nuevas versiones de la aplicación, y leer los comunicados</string>
     <string name="show_all">Mostrar todos</string>
     <string name="hide_nav_bar">Ocultar barra de navegación</string>

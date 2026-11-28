@@ -394,6 +394,16 @@ sealed class SettingsGroup(
         initialState = false
     )
 
+    data object AppUpdates : SettingsGroup(
+        id = 27,
+        icon = Icons.Rounded.MobileArrowDown,
+        titleId = R.string.app_updates,
+        settingsList = listOf(
+            Setting.AppUpdates
+        ),
+        initialState = false
+    )
+
     companion object {
         val entries: List<SettingsGroup> by lazy {
             listOfNotNull(
@@ -420,7 +430,8 @@ sealed class SettingsGroup(
                 Storage,
                 ImageSource,
                 BackupRestore,
-                Firebase.takeIf { !Flavor.isFoss() }
+                Firebase.takeIf { !Flavor.isFoss() },
+                AppUpdates
             )
         }
     }

@@ -18,16 +18,19 @@
 package com.t8rin.imagetoolbox.feature.root.presentation.components
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.lifecycle.compose.LifecycleEventEffect
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalEditPresetsController
 import com.t8rin.imagetoolbox.core.ui.utils.helper.Clipboard
 import com.t8rin.imagetoolbox.core.ui.utils.helper.ReviewHandler
 import com.t8rin.imagetoolbox.core.ui.widget.sheets.ProcessImagesPreferenceSheet
 import com.t8rin.imagetoolbox.feature.root.presentation.components.dialogs.AppExitDialog
+import com.t8rin.imagetoolbox.feature.root.presentation.components.dialogs.AppUpdateDialog
 import com.t8rin.imagetoolbox.feature.root.presentation.components.dialogs.EditPresetsSheet
-import com.t8rin.imagetoolbox.feature.root.presentation.components.dialogs.FirstLaunchSetupDialog
 import com.t8rin.imagetoolbox.feature.root.presentation.components.dialogs.GithubReviewDialog
 import com.t8rin.imagetoolbox.feature.root.presentation.components.dialogs.PermissionDialog
-import com.t8rin.imagetoolbox.feature.root.presentation.components.dialogs.TelegramGroupDialog
 import com.t8rin.imagetoolbox.feature.root.presentation.components.utils.SuccessRestoreBackupToastHandler
 import com.t8rin.imagetoolbox.feature.root.presentation.screenLogic.RootComponent
 import com.t8rin.imagetoolbox.feature.settings.presentation.components.additional.DonateDialog
@@ -35,6 +38,18 @@ import com.t8rin.imagetoolbox.feature.settings.presentation.components.additiona
 @Composable
 internal fun RootDialogs(component: RootComponent) {
     val editPresetsController = LocalEditPresetsController.current
+    val updateStatus by component.appUpdateManager.status.collectAsStateWithLifecycle()
+
+    LifecycleEventEffect(Lifecycle.Event.ON_RESUME) {
+        component.appUpdateManager.checkForUpdate(silent = true)
+    }
+
+    AppUpdateDialog(
+        status = updateStatus,
+        onDownload = component.appUpdateManager::downloadUpdate,
+        onInstall = component.appUpdateManager::installUpdate,
+        onRetry = { component.appUpdateManager.checkForUpdate() }
+    )
 
     AppExitDialog(component)
 
@@ -55,10 +70,6 @@ internal fun RootDialogs(component: RootComponent) {
         }
     )
 
-    FirstLaunchSetupDialog(
-        adjustPerformance = component::adjustPerformance
-    )
-
     DonateDialog(
         onRegisterDonateDialogOpen = component::registerDonateDialogOpen,
         onNotShowDonateDialogAgain = component::notShowDonateDialogAgain
@@ -71,12 +82,6 @@ internal fun RootDialogs(component: RootComponent) {
         onDismiss = component::hideReviewDialog,
         onNotShowAgain = ReviewHandler.current::notShowReviewAgain,
         isNotShowAgainButtonVisible = ReviewHandler.current.showNotShowAgainButton
-    )
-
-    TelegramGroupDialog(
-        visible = component.showTelegramGroupDialog,
-        onDismiss = component::hideTelegramGroupDialog,
-        onRedirected = component::registerTelegramGroupOpen
     )
 
     SuccessRestoreBackupToastHandler(component)

@@ -358,6 +358,19 @@
     <string name="erase_mode">擦除模式</string>
     <string name="travels_and_places">旅遊與地點</string>
     <string name="updates">軟體更新</string>
+    <string name="app_updates">App Updates</string>
+    <string name="app_updates_sub">Manage app updates</string>
+    <string name="checking_for_updates">Checking for updates…</string>
+    <string name="app_up_to_date">You are up to date</string>
+    <string name="app_update_available_tap_to_update">Update available. Tap to update</string>
+    <string name="app_update_available_sub">A new version is available. Update now to continue using the app.</string>
+    <string name="no_direct_apk_sub">A direct APK download is not available for this release. Please check again later.</string>
+    <string name="downloading_update_percent">Downloading update… %1$d%%</string>
+    <string name="update_downloaded_install">Update downloaded. Install it to finish updating.</string>
+    <string name="update_now">Update now</string>
+    <string name="install_update">Install update</string>
+    <string name="check_again">Check again</string>
+    <string name="retry">Retry</string>
     <string name="wait">請稍候</string>
     <string name="effort_sub">值 %1$s 表示快速的壓縮，會產生相對較大的檔案大小；而值 %2$s 則是較慢的壓縮，可以得到較小的檔案。</string>
     <string name="alphabet_and_numbers">漢字示例 0123456789 !?</string>
@@ -1552,7 +1565,6 @@
     <string name="target_cube_lut_file">目標 3D LUT 檔案 (.cube / .CUBE)</string>
     <string name="film_stock_50">50 號底片</string>
     <string name="ci_channel">CI 頻道</string>
-    <string name="imvory_in_telegram_sub">加 入我們的聊天頻道，您可以討論任何想要的議題，還可以查看我發布 Beta 和公告的 CI 頻道。</string>
     <string name="octaves">八分音符</string>
     <string name="spot_heal_sub">在繪製路徑下進行內容感知填滿</string>
     <string name="spot_heal">點狀癒合</string>
@@ -1569,7 +1581,6 @@
     <string name="edgy_amber">銳利琥珀</string>
     <string name="greenish">淡綠</string>
     <string name="ico_size_warning">ICO 檔案的最大儲存尺寸僅為 256*256</string>
-    <string name="imvory_in_telegram">Telegram 中的 Imvory 🎉</string>
     <string name="lacunarity">Lacunarity</string>
     <string name="gain">增益</string>
     <string name="use_circle_kernel">使用圓形內核</string>
